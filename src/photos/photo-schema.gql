@@ -1,0 +1,19 @@
+type Photo{
+    id:Int
+    name:String
+    userId:Int
+}
+
+type PhotoInput{
+    name:String
+    userId:Int
+}
+
+type Query{
+    getAllPhoto:[Photo]
+    getPhoto(id:Int):Photo
+}
+
+type Mutation{
+    createPhoto(PhotoInput:String):Photo
+}

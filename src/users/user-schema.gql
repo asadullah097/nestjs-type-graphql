@@ -1,0 +1,21 @@
+type User{
+    id:Int!
+    firstName:String
+    lastName:String
+    isActive:Boolean
+}
+
+type UserInput{
+    firstName:String
+    lastName:String
+    isActive:Boolean
+}
+
+type Query{
+    getAllUsers:[User]
+    getUser(id:Int):User
+}
+
+type Mutation{
+    createUser(firstName:String,lastName:String,isActive:Boolean):User
+}
